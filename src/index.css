@@ -8,6 +8,31 @@ body {
   background: #e8edf0;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(255,255,255,.2); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,.3); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,0,0,.4)
+}
+
+::-webkit-scrollbar-corner{
+  opacity: .5;
+}
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -44,9 +69,21 @@ code {
   background: rgb(221, 225, 230);
 }
 
+.md_file span{
+  color: rgba(0,0,0,.3)
+}
+
 .md_file:hover {
   padding: 10px 15px;
   background: rgb(217, 221, 223);
+}
+.active{
+  background: rgb(206, 211, 214);
+}
+
+
+.new_file{
+    background: #62b4e6;
 }
 
 .editor {
@@ -69,15 +106,28 @@ code {
   height: calc(100% - 100px);
 }
 
-textarea {
-  height: calc(100vh - 205px);
-  width: calc(100% - 25px);
+.btn-save{
+  padding: 10px 15px;
+  background: #2b9de4;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+
+  float:right;
+}
+
+.editable{
   border: 1px solid #323f46;
   border-radius: 3px;
   padding: 10px;
   box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.4) inset;
   background: #232c31;
   color: rgba(250, 250, 255, 0.7)
+}
+textarea {
+  height: calc(100vh - 250px);
+  width: calc(100% - 25px);
+
 }
 
 ul li {
